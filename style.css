@@ -1,3 +1,75 @@
 * {
     font-family: 'Kumbh Sans';
+    box-sizing: border-box;
+}
+
+body {
+    /* border: 1px solid blue; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    min-width: 350px;
+    background-image: url(images/bg-pattern-top.svg);
+    /* overflow: hidden; */
+}
+
+.top {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+}
+
+.top_bg {
+
+}
+
+.firsthalf {
+    /* border:2px solid green; */
+    height: 50%;    
+    background-image: url(images/bg-pattern-card.svg);
+    border-radius: 10px 10px 0px 0;
+}
+
+.secondhalf{
+    /* position: relative; */
+    text-align: center;
+    height: 50%;  
+    background-color: #ffffff;
+    /* border: 2px solid red; */
+}
+
+.texts {
+    padding-top: 15%;
+}
+
+.bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid #000;
+
+    /* border: 2px solid black; */
+}
+
+.profilepic {
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; */
+
+    border-radius: 50%;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
 }
