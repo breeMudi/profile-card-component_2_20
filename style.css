@@ -1,84 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+* {
+    font-family: 'Kumbh Sans';
+    box-sizing: border-box;
+    margin: 0px;
+}
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+body {
+    font-size: 18px;
+    background-color: #19a2ae;
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -30% left -25%, bottom 50% right -30%;
+    /* background-position: top 50% left -50%, bottom 150% right -50%; */
+}
 
-    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;500&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@400;700&family=Space+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Frontend Mentor | Profile card component</title>
+.card {
+    /* border: 1px solid blue; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    min-width: 330px;
+    
+}
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <!-- <div class="top-bg"><img src="images/bg-pattern-top.svg" alt="" /></div>
-    <div class="bot-bg"><img src="images/bg-pattern-bottom.svg" alt="" /></div> -->
 
-    <div class="card">
-      <div class="top">
-        <img class="profilepic" src="images/image-victor.jpg" alt="" />
-        <div class="firsthalf">
-          <!-- <img id="top_bg" src="images/bg-pattern-card.svg" alt="" /> -->
-        </div>
-        <div class="secondhalf">
-          <div class="texts">
-            <div class="name-age">
-              <p class="bold">Victor Crest</p>
-              <p class="plain">26</p>
-            </div>
+.top {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 
-            <div class="location">
-              <p class="plain">London</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    /* justify-content: ; */
+}
 
-      <div class="bottom">
-        <div>
-          <p class="bold">80K</p>
-          <p class="plain">Followers</p>
-        </div>
-        <div>
-          <p class="bold">803K</p>
-          <p class="plain">Likes</p>
-        </div>
-        <div>
-          <p class="bold">1.4K</p>
-          <p class="plain">Photos</p>
-        </div>
-      </div>
-    </div>
+.bottom div{
+    padding: 20px;
+}
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Bridget</a>.
-    </div> -->
-  </body>
-</html>
+
+.firsthalf {
+    /* border:2px solid green; */
+    height: 50%;    
+    background-image: url(images/bg-pattern-card.svg);
+    border-radius: 10px 10px 0px 0;
+}
+
+.secondhalf{
+    /* position: relative; */
+    text-align: center;
+    height: 50%;  
+    background-color: #ffffff;
+    /* border: 2px solid red; */
+}
+
+.texts {
+    padding-top: 20%;
+}
+
+.bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid #000;
+    text-align: center;
+
+    /* border: 2px solid black; */
+}
+
+.profilepic {
+    border-radius: 50%;
+    border: 7px solid #ffffff;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
+}
+
+.bold {
+    font-weight: 700;
+    color: #2d3248 ;
+}
+
+.plain {
+    font-weight: 400;
+    color: #969696;
+    /* opacity: 0.5; */
+}
+
+
+
+
+
+/* .name-age {
+    padding-left: 20px;
+} */
