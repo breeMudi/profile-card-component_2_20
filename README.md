@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - profile-card-component_2_20
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [profile-card-component on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -18,13 +18,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![The desktop view of the qr-component](./images/desktop_view.png)
+![The desktop view of the qr-component](./my_desktop.jpg)
 <!-- ![](./desktop_view.jpg)![desktop_view](https://user-images.githubusercontent.com/65234249/224862538-59bda0ed-f0b9-41c6-9706-4af1b6f8087b.png) -->
 
 ### Links
 
-- Solution URL: [Link to my solution git repo](https://github.com/breeMudi/qr-component-challenge/tree/main)
-- Live Site URL: [Link to project view on git-hub live server](https://breemudi.github.io/qr-component-challenge/)
+- Solution URL: [Link to my solution git repo](https://github.com/breeMudi/profile-card-component_2_20/tree/main)
+- Live Site URL: [Link to project view on git-hub live server](https://breemudi.github.io/profile-card-component_2_20/)
 
 ## My process
 
@@ -33,28 +33,29 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [Styled Components](https://styled-components.com/) - For styles
 
 
 ### What I learned
 
-Through this exercise, I understood the importance of setting {margin: auto} to target divs in CSS especially after initializing margin as 0 at the root html level.
+Through this exercise, I understood the importance of setting background image properties in CSS.
+I learnt concepts on how to manipulate background images with emphasis on background-position and background-repeat
+I saw the overwhelming need to understand the working principles of "POSITION" attributes (fixed, relative and absolute)
 
-I however noticed that the webpage viewed differently in chrome (Below!) when compared with firefox (Above!)
+This project was carried out with a mobile-first approach. The picture below shows a camparison of the exercise given to the solution I came up with. 
+Exercise source: frontend Mentor website 
+current view: mobile
 
-![The desktop view on chrome](./images/chromes.jpg).
-
-This project was carried out with a mobile-first approach. The picture below shows the camparison of the exercise as given in the frontend Mentor site and The outlook of my project in mobile view
-
-![Comparison](./images/mobile_view_exercise_mine.jpg).
+![Comparison](./comparison.jpg).
 
 
 ### Continued development
 
-I hope to find and reduce redundant code in the css file.
-In the nearest future, Will create a series where I attempt 20 more frontend Mentor challenges in another git repository. This I believe will help me grasp the importance of more concepts in html, css and javascript.
+As part of my 20-frontendMentor project challenge series, here is project 2 of 20 ... yaay!
+
+There is need to cross-check code to spot repetition so as to avoid redundancy.
+
 
 ## Author
 
