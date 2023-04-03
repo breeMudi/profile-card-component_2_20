@@ -16,14 +16,14 @@ body {
 
 
 .card {
-    /* border: 1px solid blue; */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    min-width: 330px;
-    
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
 }
 
 
@@ -57,7 +57,7 @@ body {
 }
 
 .texts {
-    padding-top: 20%;
+    padding-top: 22%;
 }
 
 .bottom {
@@ -66,7 +66,7 @@ body {
     justify-content: space-around;
     background-color: #ffffff;
     border-radius: 0px 0px 10px 10px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #ededed;
     text-align: center;
 
     /* border: 2px solid black; */
@@ -74,7 +74,7 @@ body {
 
 .profilepic {
     border-radius: 50%;
-    border: 7px solid #ffffff;
+    border: 5px solid #ffffff;
 
     position: absolute;
     margin: auto;
@@ -89,16 +89,36 @@ body {
     color: #2d3248 ;
 }
 
-.plain {
+.plain, .age {
     font-weight: 400;
-    color: #969696;
-    /* opacity: 0.5; */
+    color: #6a6f81;
 }
 
+.top .plain {
+    padding-top: 7px;
+    font-size: 14px;
+}
 
+.bottom .plain {
+    padding-top: 5px;
+    font-size: 12px;
+}
 
+.age{
+    padding-left: 3px;
+}
 
+.name-age *{
+    display: inline-block;
+}
 
-/* .name-age {
-    padding-left: 20px;
-} */
+@media (min-width: 414px){
+    body{
+        background-position: top -38% left 150%, bottom 38% right 150%;
+        /* background-position: top -30% left -25%, bottom 50% right -30%; */
+    }
+
+    .card {
+        max-width: 413px;
+    }
+}
